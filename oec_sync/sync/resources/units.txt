@@ -1,0 +1,82 @@
+###############################################################################
+#                           Unit Definition File                              #
+#                                                                             #
+# Before adding units, please check if it's already defined in pint package   #
+# https://github.com/hgrecco/pint/blob/master/pint/default_en.txt             #
+###############################################################################
+
+Gyr = gigayear
+AU = astronomical_unit
+
+# not sure about this. Need to speak with the Astro TA
+# treat as a reference unit for now
+BJD = [] # Barycentric Julian Date
+
+M_e = 5.97219*(10**24)*kilogram = earth_mass
+R_e = 6.371*(10**6)*meter = earth_radius
+M_j = 1.8986*(10**27)*kilogram = jupiter_mass
+R_j = 6.9911*(10**7)*meter = jupiter_radius
+
+# For blank rows in the listings below or numbers with multiple listings, we
+# need to ask TA. Or if any of you know better
+
+'''
+OEC
+#
+#  1: Primary identifier of planet
+#  2: Binary flag [0=no known stellar binary companion; 1=P-type binary
+(circumbinary); 2=S-type binary; 3=orphan planet (no star)]
+#  3: Planetary mass [Jupiter masses] Planet Mass or M*sin(i)[Jupiter mass]
+#  4: Radius [Jupiter radii]  Planet Radius [Jupiter radii]
+#  5: Period [days] # COLUMN pl_orbper: Orbital Period [days]
+#  6: Semi-major axis [Astronomical Units] Orbit Semi-Major Axis [AU]
+#  7: Eccentricity
+#  8: Periastron [degree]
+#  9: Longitude [degree]
+# 10: Ascending node [degree]
+# 11: Inclination [degree]  Inclination [deg]
+# 12: Surface or equilibrium temperature [K]
+# 13: Age [Gyr]
+# 14: Discovery method
+# 15: Discovery year [yyyy]
+# 16: Last updated [yy/mm/dd]
+# 17: Right ascension [hh mm ss]
+# 18: Declination [+/-dd mm ss]
+# 19: Distance from Sun [parsec]
+# 20: Host star mass [Solar masses]
+# 21: Host star radius [Solar radii]
+# 22: Host star metallicity [log, relative to solar]
+# 23: Host star temperature [K]
+# 24: Host star age [Gyr] Stellar Age [Gyr]
+
+NASA
+1.# COLUMN pl_name: Planet Name
+2.
+3.# COLUMN pl_bmassj: Planet Mass or M*sin(i)[Jupiter mass]
+4.# COLUMN pl_radj: Planet Radius [Jupiter radii]
+5.# COLUMN pl_orbper: Orbital Period [days]
+6.# COLUMN pl_orbsmax: Orbit Semi-Major Axis [AU]
+7.# COLUMN periastron:    Eccentricity ??
+  # COLUMN pl_orblper: Long. of Periastron [deg]
+8.# COLUMN periastron:    Eccentricity ??
+9.# COLUMN st_glon: Galactic Longitude [deg]
+  # COLUMN pl_orblper: Long. of Periastron [deg]
+  # COLUMN st_elon:  Ecliptic Longitude [deg]
+10.
+11.# COLUMN pl_orbincl: Inclination [deg]
+12.# COLUMN pl_eqt: Equilibrium Temperature [K]
+13.
+14.# COLUMN pl_discmethod: Discovery Method
+15.# COLUMN pl_disc: Year of Discovery [yyyy]
+16.# COLUMN rowupdate: Date of Last Update [yyyy-mm-dd]
+17.
+18.
+19.
+20.# COLUMN st_mass: Stellar Mass [Solar mass]
+21.# COLUMN st_rad: Stellar Radius [Solar radii]
+22.# COLUMN st_metfe: Stellar Metallicity [dex]
+23.
+24.# COLUMN st_age:         Stellar Age [Gyr]
+
+EXOPLANET
+'''

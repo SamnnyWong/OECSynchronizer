@@ -1,0 +1,125 @@
+name: "Exoplanet.eu"
+url: "http://exoplanet.eu/catalog/csv"
+
+#ignore: True
+#debug_file: "tests/catalogues/exoplanet.eu.csv"
+
+# system prop
+system_name: star_name
+
+# number type required
+# planet prop
+planet_name: "# name"
+
+field_map:
+
+  semimajoraxis:
+    name: semi_major_axis
+    errorminus: semi_major_axis_error_min
+    errorplus: semi_major_axis_error_max
+    unit: AU
+
+  eccentricity:
+    name: eccentricity
+    errorminus: eccentricity_error_min
+    errorplus: eccentricity_error_max
+
+  periastron:
+    name: omega
+    errorminus: omega_error_min
+    errorplus: omega_error_max
+    unit: deg
+
+  inclination:
+    name: inclination
+    errorminus: inclination_error_min
+    errorplus: inclination_error_max
+    unit: deg
+
+  impactparameter:
+    name: impact_parameter
+    errorminus: impactparameter_error_min
+    errorplus: impactparameter_error_max
+
+  period:
+    name: orbital_period
+    errorminus: orbital_period_error_min
+    errorplus: orbital_period_error_max
+    unit: days
+
+  transittime:
+    name: tzero_tr
+    errorminus: tzero_tr_error_min
+    errorplus: tzero_tr_error_max
+    unit: BJD
+
+  periastrontime:
+    name: tperi
+    errorminus: tperi_error_min
+    errorplus: tperi_error_max
+    unit: BJD
+
+  maximumrvtime:
+    name: tzero_vr
+    errorminus: tzero_vr_error_min
+    errorplus: tzero_vr_error_max
+    unit: BJD
+
+  mass:
+    name: mass
+    errorminus: mass_error_min
+    errorplus: mass_error_max
+    unit: M_j
+
+  radius:
+    name: radius
+    errorminus: radius_error_min
+    errorplus: radius_error_max
+    unit: R_j
+
+  spinorbitalignment:
+    name: lamdba_angle
+    errorminus: lamdba_angle_error_min
+    errorplus: lamdba_angle_error_max
+    unit: deg
+
+  separation:
+    name: angular_distance
+    errorminus: angular_distance_error_min
+    errorplus: angular_distance_error_max
+    unit: arcsec
+
+  temperature:
+    name: temp_calculated
+    unit: K
+
+  magH:
+    name: mag_h
+  magI:
+    name: mag_i
+  magJ:
+    name: mag_j
+  magK:
+    name: mag_k
+  magV:
+    name: mag_v
+
+  discoveryyear:
+    name: discovered
+
+
+#########################################################3
+# below are the columns that could not find a match between oec and exo.eu
+#  spectraltype: star_sp_type
+#
+#  discoverymethod: detection_type
+#
+#  longitude
+#  ascendingnode
+#  meananomaly
+#  istransiting
+#  age(only found value for star)
+#  positionangle
+#  magB
+#  magR
+#  magU

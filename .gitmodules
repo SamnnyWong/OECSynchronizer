@@ -1,0 +1,6 @@
+[submodule "teammask.github.io"]
+	path = teammask.github.io
+	url = git@github.com:teammask/teammask.github.io.git
+[submodule "oec"]
+	path = oec
+	url = git@github.com:teammask/open_exoplanet_catalogue.git

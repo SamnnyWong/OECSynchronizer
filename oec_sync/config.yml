@@ -1,0 +1,14 @@
+# Github username
+gh_username: "teammask"
+
+# Github api token
+gh_api_token: "5559b4a1ccf51d5980005b4524cd54c9f069f097"
+
+# Github repository name (must be unique/full name)
+gh_repo: 'teammask/open_exoplanet_catalogue'
+
+# Git repository
+oec_git: "https://github.com/teammask/open_exoplanet_catalogue.git"
+
+# Path to the folder containing catalogue configurations
+cat_config_path: "sync_config"

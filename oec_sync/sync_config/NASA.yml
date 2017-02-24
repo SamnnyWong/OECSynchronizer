@@ -1,0 +1,131 @@
+name: "NASA Exoplanet Archive"
+url: "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&format=csv&select=*"
+
+#debug_file: "tests/catalogues/nasa_api.csv"  # read from a local file
+
+# system prop
+system_name: pl_hostname
+
+# planet prop
+planet_name: pl_name
+
+field_map:
+  semimajoraxis: #type="number"
+    name: pl_orbsmax
+    errorplus: pl_orbsmaxerr1
+    errorminus: pl_orbsmaxerr2
+    limit_flag: pl_orbsmaxlim
+    unit: AU
+
+  eccentricity: # type: number
+    name: pl_orbeccen
+    errorplus: pl_orbeccenerr1
+    errorminus: pl_orbeccenerr2
+    limit_flag: pl_orbeccenlim
+
+  periastron: #type="number"
+    name: pl_orblper
+    errorplus: pl_orblpererr1
+    errorminus: pl_orblpererr2
+    limit_flag: pl_orblperlim
+    unit: deg
+
+  inclination: 
+    name: pl_orbincl # type: number (dynamic monitored)
+    errorplus: pl_orbinclerr1
+    errorminus: pl_orbinclerr2
+    limit_flag: pl_orbincllim
+    unit: deg
+
+  impactparameter: #type="number" 
+    name: pl_imppar
+    errorplus: pl_impparerr1
+    errorminus: pl_impparerr2
+    limit_flag: pl_impparlim
+
+  period:
+    name: pl_orbper
+    errorplus: pl_orbpererr1
+    errorminus: pl_orbpererr2
+    limit_flag: pl_obperlim
+    unit: days
+
+  periastrontime: #type="number"
+    name: pl_orbtper
+    errorplus: pl_orbtpererr1
+    errorminus: pl_orbtpererr2
+    limit_flag: pl_orbtperlim
+    unit: BJD   # matched the value for 11 Com b on OEC
+
+  mass: #type="number"
+    name: pl_bmassj
+    errorplus: pl_bmassjerr1
+    errorminus: pl_bmassjerr2
+    limit_flag: pl_bmassjlim
+    unit: M_j
+
+  radius: #type="number"
+    name: pl_radj
+    errorplus: pl_radjerr1
+    errorminus: pl_radjerr2
+    limit_flag: pl_radjlim
+    unit: R_j
+
+  temperature: #type="number"
+    name: pl_eqt        # planet equilibrium temperature
+    errorplus: pl_eqterr1
+    errorminus: pl_eqterr2
+    limit_flag: pl_eqtlim
+    unit: K
+
+#  age: #type="number" should not be st_age
+
+  inclination: #type="number"
+    name: pl_orbinc
+    errorplus: pl_orbinclerr1
+    errorminus: pl_orbinclerr2
+    limit_flag: pl_orbinclim
+    unit: deg
+
+  discoveryyear:
+    name: pl_disc #type="year"
+
+# the following filed can not be found in nasa
+#  <xs:element name="list" type="listtype" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="meananomaly" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="spinorbitalignment" type="number" minOccurs="0"
+#  maxOccurs="1"/>
+#  <xs:element name="positionangle" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magB" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magH" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magI" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magJ" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magK" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magR" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magU" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="magV" type="number" minOccurs="0" maxOccurs="1"/>
+#  <xs:element name="separation" type="number"/>
+#  transittime: #type="number"
+#  pl_trandur doesn't look like a correct column, e.g. CoRoT-10 b
+
+# non_number type is not supported
+#  spectraltype: st_sp #type="spectraltypedef"
+#    name #type="nametype"
+#    list #type="listtype"
+# discoverymethod: pl_discmethod
+# istransiting: pl_radslim #type="xs:boolean"
+# description: #type="xs:string"
+# lastupdate: rowupdate #type="lastupdatedef"
+# image: #type="xs:string"
+# imagedescription: #type="xs:string"
+
+
+
+value_map:
+  discoverymethodtype:
+    imaging: Imaging
+    microlensing: Microlensing
+    RV: Radial Velocity
+    timing: .*Timing.*
+    transit: Transit
+    number: pl_orbtper

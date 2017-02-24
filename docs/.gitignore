@@ -1,0 +1,16 @@
+!.gitkeep
+
+*~
+*.log
+*.sublime-project
+*.sublime-workspace
+node_modules/
+
+bower_components/
+_site
+_theme_packages/
+.sass-cache
+.jekyll-metadata
+
+
+.DS_Store

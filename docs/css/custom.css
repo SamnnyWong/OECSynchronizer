@@ -1,0 +1,26 @@
+.team-member-img-container {
+	height: 250px;
+	width: 200px;
+	vertical-align:top;
+}
+.team-member-img {
+	max-width: 200px;
+	overflow: hidden;
+	align: middle;
+	margin: 0 auto;
+	display: block;
+}
+
+.jumbotron-team {
+	background: url(/images/bio_pic/team.png) no-repeat center center; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	min-height: 40em;
+}
+
+
+.navbar-inner {
+    background:transparent;
+}

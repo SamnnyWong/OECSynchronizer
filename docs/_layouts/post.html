@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section id="main-content">
+	<article>
+		<ul class="nav nav-pills">
+			<!-- Title & date-->
+			<li>
+				<h1>{{ page.title }}</h1>
+				<p class="text-primary">
+					{{ page.date | date: "%B %e, %Y" }}
+				</p>
+			</li>
+		</ul>
+		<hr>
+		<div class="markdown-body">
+			{{ content }}
+		</div>
+	</article>
+</section>
+<aside id="sidebar">
+	{% assign main_cat = page.categories | first %}
+	{% assign posts = site.categories.[main_cat] %}
+	{% for post in posts %}
+		<span>
+		<a href="{{ post.url }}">
+			<h4> {{ post.title}} </h4>
+		</a>
+		{{ post.date | date: "%B %e, %Y" }}
+		</span>
+	{% endfor %}
+</aside>

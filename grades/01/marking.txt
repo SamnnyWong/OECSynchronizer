@@ -1,0 +1,62 @@
+CSCC01 -- Deliverable 1 -- Marking Guidelines
+
+
+1) Introduce the team:      7/10
+
+  team's name present: 1
+
+  team logo present: 1
+
+  picture of the entire team present: 1
+
+  team's goals presented: 1/3
+    spelling and grammar: 1
+    clarity: 1
+    realistic yet ambitious goals: 0
+
+  team's strengths explained: 2/4
+    spelling and grammar: 1
+    clarity: 1
+    makes good use of each member's background: 0
+
+==== Comments ====
+The team description is
+"We are Team MASK. We will collaborate night and day to produce dazzling designs and effective software. Our team brings together a group of great minds with a background and knowledge from personal projects, and co-op work experience. We will utilize our experience to succeed in this course."
+
+Team goal is vague: "work together" (-1)
+Team strength is vague and does not address each member's background (-2)
+
+===================
+
+
+2) Introduce the team members:        28/30
+
+   I am assuming 5 members. If your team has four members,
+   scale accordingly.
+
+   for each member:
+      approx 150 words: 1
+      spelling and grammar: 1
+      clarity: 1
+      professionalism: 2
+
+   The members' introductions are consistent w.r.t. person (in
+   first/third person), style, qualities/interests described, etc., so
+   that the overall introduction reads well:      5
+
+==== Comments ====
+The website document is clear and of good quality
+Consistency could have been improved (-2)
+===================
+
+3) Team agreement:      0/10
+
+    methods of communication, including wait time for replies, clearly stated:  2
+    meeting times arranged:  2
+    contingency planning (member is sick, missing meetings, not performing up to standards, etc.):  2
+    use of version control is discussed:  2
+    some planning of individual roles:  2
+
+==== Comments ====
+- missing
+===================
